@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <!-- Link to Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Weather Dashboard</h1>
+      </header>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <!-- Search for a City section -->
+            <div class="row">
+              <div class="col-12 h2 fw-bold">Search for a City:</div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <input type="text" id="city-search" class="form-control" placeholder="San Diego">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button class="btn btn-primary w-100 mt-3" style="background-color: #7c90ff" id="search-button">Search</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <hr />
+              </div>
+            </div>
+            <div id="search-history"></div>
+          </div>
+      
+          <div class="col-9">
+            <div class="container">
+              <div id="weather">
+                <div class="row">
+                  <div class="col-auto">
+                    <h4 id="location" class="fw-bold"></h4>
+                  </div>
+                  <div class="col-auto">
+                    <h4 id="date" class="fw-bold"></h4>
+                  </div>
+                  <div class="col-auto">
+                    <div id="icon"></div>
+                  </div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col">
+                    <div id="temp"></div>
+                  </div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col">
+                    <div id="wind"></div>
+                  </div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col">
+                    <div id="humidity"></div>
+                  </div>
+                </div>
+              </div>
+
+           <div class="container">
+  <div class="row mt-3">
+    <div class="col-8 h4 fw-bold text-start">5-Day Forecast:</div>
+
+
+
+          
+        </div>
+      </div> 
+        
+      
+
+
+
+      <div id="forecast"></div>
+        
+    </div>                             
+    </div>
+  </div>
+
+
+
+
+  <div class="row mt-3">
+    </div>
+  </div>
+</div>
+
+          
+    </main>
     
-</body>
+   
+  </body>
+  <script src="script.js"></script>
 </html>
+
+
+
+
+   
+
+
+
